@@ -22,7 +22,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     { href: "/", label: "Hjem" },
     { href: "/produkter", label: "Produkter" },
     { href: "/teknologi", label: "Teknologi" },
-    { href: "/info", label: "Info & Vedlikehold" },
+    { href: "/info", label: "Fakta & Spørsmål" },
+    { href: "/media", label: "I Media" },
   ];
 
   return (

@@ -254,46 +254,106 @@ export default function Products() {
         <div className="container mx-auto px-4">
            <div className="text-center mb-12">
              <h2 className="text-3xl font-bold font-display text-slate-900">Tekniske Spesifikasjoner</h2>
-             <p className="text-slate-500 mt-2">En rask oversikt over våre mest populære modeller</p>
+             <p className="text-slate-500 mt-2">Detaljert oversikt over alle BioCleaner modeller</p>
            </div>
            
-           <div className="overflow-x-auto">
-             <table className="w-full bg-white rounded-2xl shadow-sm border-separate border-spacing-0 overflow-hidden">
+           <div className="overflow-x-auto mb-12">
+             <table className="w-full bg-white rounded-2xl shadow-sm border-separate border-spacing-0 overflow-hidden text-sm">
                <thead>
                  <tr className="bg-primary text-white">
-                   <th className="p-4 text-left font-semibold">Modell</th>
-                   <th className="p-4 text-left font-semibold">Bruk</th>
-                   <th className="p-4 text-left font-semibold">Kapasitet (PE)</th>
-                   <th className="p-4 text-left font-semibold">Diameter / Høyde</th>
+                   <th className="p-3 text-left font-semibold">Modell</th>
+                   <th className="p-3 text-left font-semibold">PE</th>
+                   <th className="p-3 text-left font-semibold">Daglig kapasitet</th>
+                   <th className="p-3 text-left font-semibold">Volum</th>
+                   <th className="p-3 text-left font-semibold">Diameter</th>
+                   <th className="p-3 text-left font-semibold">Høyde</th>
+                   <th className="p-3 text-left font-semibold">Vekt</th>
                  </tr>
                </thead>
                <tbody className="divide-y divide-slate-100">
                  <tr className="hover:bg-slate-50 transition-colors">
-                   <td className="p-4 font-medium text-primary">BC 6 Optima</td>
-                   <td className="p-4">Hytte / Liten bolig</td>
-                   <td className="p-4">5 personer</td>
-                   <td className="p-4">160cm / 205cm</td>
+                   <td className="p-3 font-medium text-primary">BC 4</td>
+                   <td className="p-3">1-4</td>
+                   <td className="p-3">0,6 m³/dag</td>
+                   <td className="p-3">2,3 m³</td>
+                   <td className="p-3">1500 mm</td>
+                   <td className="p-3">1850 mm</td>
+                   <td className="p-3">135 kg</td>
                  </tr>
                  <tr className="hover:bg-slate-50 transition-colors">
-                   <td className="p-4 font-medium text-primary">BC 10 Optima</td>
-                   <td className="p-4">Enebolig</td>
-                   <td className="p-4">8 personer</td>
-                   <td className="p-4">170cm / 230cm</td>
+                   <td className="p-3 font-medium text-primary">BC 6</td>
+                   <td className="p-3">1-6</td>
+                   <td className="p-3">0,9 m³/dag</td>
+                   <td className="p-3">3,0 m³</td>
+                   <td className="p-3">1600 mm</td>
+                   <td className="p-3">2050 mm</td>
+                   <td className="p-3">165 kg</td>
                  </tr>
                  <tr className="hover:bg-slate-50 transition-colors">
-                   <td className="p-4 font-medium text-primary">BC 20</td>
-                   <td className="p-4">Tomannsbolig / Små felt</td>
-                   <td className="p-4">16 personer</td>
-                   <td className="p-4">200cm / 250cm</td>
+                   <td className="p-3 font-medium text-primary">BC 8</td>
+                   <td className="p-3">1-8</td>
+                   <td className="p-3">1,2 m³/dag</td>
+                   <td className="p-3">4,0 m³</td>
+                   <td className="p-3">1700 mm</td>
+                   <td className="p-3">2200 mm</td>
+                   <td className="p-3">195 kg</td>
                  </tr>
                  <tr className="hover:bg-slate-50 transition-colors">
-                   <td className="p-4 font-medium text-primary">BC 30</td>
-                   <td className="p-4">Fellesanlegg</td>
-                   <td className="p-4">24 personer</td>
-                   <td className="p-4">220cm / 260cm</td>
+                   <td className="p-3 font-medium text-primary">BC 10</td>
+                   <td className="p-3">1-10</td>
+                   <td className="p-3">1,5 m³/dag</td>
+                   <td className="p-3">5,0 m³</td>
+                   <td className="p-3">1700 mm</td>
+                   <td className="p-3">2300 mm</td>
+                   <td className="p-3">210 kg</td>
+                 </tr>
+                 <tr className="hover:bg-slate-50 transition-colors">
+                   <td className="p-3 font-medium text-primary">BC 15</td>
+                   <td className="p-3">1-15</td>
+                   <td className="p-3">2,25 m³/dag</td>
+                   <td className="p-3">7,5 m³</td>
+                   <td className="p-3">1900 mm</td>
+                   <td className="p-3">2400 mm</td>
+                   <td className="p-3">280 kg</td>
+                 </tr>
+                 <tr className="hover:bg-slate-50 transition-colors">
+                   <td className="p-3 font-medium text-primary">BC 20</td>
+                   <td className="p-3">1-20</td>
+                   <td className="p-3">3,0 m³/dag</td>
+                   <td className="p-3">10,0 m³</td>
+                   <td className="p-3">2000 mm</td>
+                   <td className="p-3">2500 mm</td>
+                   <td className="p-3">350 kg</td>
+                 </tr>
+                 <tr className="hover:bg-slate-50 transition-colors">
+                   <td className="p-3 font-medium text-primary">BC 25</td>
+                   <td className="p-3">1-25</td>
+                   <td className="p-3">3,75 m³/dag</td>
+                   <td className="p-3">12,5 m³</td>
+                   <td className="p-3">2100 mm</td>
+                   <td className="p-3">2550 mm</td>
+                   <td className="p-3">400 kg</td>
+                 </tr>
+                 <tr className="hover:bg-slate-50 transition-colors">
+                   <td className="p-3 font-medium text-primary">BC 30</td>
+                   <td className="p-3">1-30</td>
+                   <td className="p-3">4,5 m³/dag</td>
+                   <td className="p-3">15,0 m³</td>
+                   <td className="p-3">2200 mm</td>
+                   <td className="p-3">2600 mm</td>
+                   <td className="p-3">450 kg</td>
                  </tr>
                </tbody>
              </table>
+           </div>
+
+           <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+             <h3 className="font-bold text-lg text-slate-900 mb-4">Forklaring</h3>
+             <div className="grid md:grid-cols-3 gap-4 text-sm text-slate-600">
+               <div><strong>PE:</strong> Person-ekvivalenter (antall personer anlegget er dimensjonert for)</div>
+               <div><strong>Daglig kapasitet:</strong> Maksimal mengde avløpsvann per dag</div>
+               <div><strong>Volum:</strong> Total tankvolum</div>
+             </div>
            </div>
         </div>
       </section>
