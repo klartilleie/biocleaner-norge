@@ -1,6 +1,6 @@
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
-import { Droplets, Leaf, Menu, X, Waves, Info } from "lucide-react";
+import { Droplets, Leaf, Menu, Waves } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -107,8 +107,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <span>BioCleaner</span>
               </div>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Ledende leverandør av biologiske minirenseanlegg i Norge.
-                Miljøvennlig teknologi for fremtiden.
+                Levert av Smart Hjem AS.
+                Markedets beste løsning for rensing av kloakk i spredt bebyggelse.
               </p>
             </div>
 
@@ -151,7 +151,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
           <div className="border-t border-slate-800 mt-12 pt-8 text-center text-xs text-slate-600">
-            © {new Date().getFullYear()} BioCleaner AS. Alle rettigheter reservert.
+            © {new Date().getFullYear()} Smart Hjem AS. Alle rettigheter reservert.
           </div>
         </div>
       </footer>

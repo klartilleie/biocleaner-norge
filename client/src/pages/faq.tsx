@@ -5,7 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { FileText, Gavel, AlertCircle } from "lucide-react";
+import { FileText, Gavel, AlertCircle, Building2 } from "lucide-react";
 
 export default function Info() {
   return (
@@ -13,15 +13,43 @@ export default function Info() {
        <div className="bg-slate-50 py-20">
         <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold font-display text-slate-900 mb-6">
-              Info & Vedlikehold
+              Krav og Informasjon
             </h1>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              Her finner du svar på de vanligste spørsmålene og informasjon om drift av ditt Biocleaner anlegg.
+              Smart Hjem AS hjelper deg med å navigere i kommunale krav til rensing av kloakk.
             </p>
         </div>
       </div>
 
       <div className="container mx-auto px-4 py-16 max-w-4xl">
+        
+        {/* New Municipal Requirements Section */}
+        <div className="bg-primary/5 border border-primary/20 rounded-3xl p-8 md:p-12 mb-16">
+           <div className="flex items-start gap-6">
+              <div className="p-4 bg-primary text-white rounded-2xl hidden md:block">
+                 <Building2 className="w-8 h-8" />
+              </div>
+              <div className="space-y-4">
+                 <h2 className="text-2xl md:text-3xl font-bold font-display text-slate-900">Krav fra kommunen?</h2>
+                 <p className="text-lg text-slate-700 leading-relaxed">
+                   Stadig flere norske kommuner strammer inn kravene til private avløp. Dette gjøres for å hindre forurensning av bekker, elver og grunnvann. 
+                 </p>
+                 <p className="text-lg text-slate-700 leading-relaxed">
+                   Hvis du har mottatt varsel om pålegg, må du installere en godkjent renseløsning. BioCleaner er SINTEF-godkjent og tilfredsstiller alle standardkrav (BOF5, Fosfor, etc.).
+                 </p>
+                 <div className="pt-2">
+                   <h3 className="font-bold text-slate-900 mb-2">Vi bistår med:</h3>
+                   <ul className="grid sm:grid-cols-2 gap-2">
+                     <li className="flex items-center gap-2 text-slate-600"><div className="w-1.5 h-1.5 rounded-full bg-primary"></div>Prosjektering</li>
+                     <li className="flex items-center gap-2 text-slate-600"><div className="w-1.5 h-1.5 rounded-full bg-primary"></div>Søknad til kommunen</li>
+                     <li className="flex items-center gap-2 text-slate-600"><div className="w-1.5 h-1.5 rounded-full bg-primary"></div>Installasjon</li>
+                     <li className="flex items-center gap-2 text-slate-600"><div className="w-1.5 h-1.5 rounded-full bg-primary"></div>Serviceavtale</li>
+                   </ul>
+                 </div>
+              </div>
+           </div>
+        </div>
+
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           <div className="bg-blue-50 p-8 rounded-2xl border border-blue-100">
              <div className="flex items-center gap-4 mb-4">
@@ -31,7 +59,7 @@ export default function Info() {
                <h3 className="text-xl font-bold text-slate-900">Serviceavtale</h3>
              </div>
              <p className="text-slate-600 mb-4">
-               For å sikre optimal drift anbefaler vi en årlig serviceavtale. Dette er også ofte et krav fra kommunen.
+               For å sikre optimal drift av ditt kloakkrenseanlegg anbefaler vi en årlig serviceavtale. Dette er også ofte et absolutt krav fra kommunen for å få utslippstillatelse.
              </p>
           </div>
           <div className="bg-green-50 p-8 rounded-2xl border border-green-100">
@@ -42,7 +70,7 @@ export default function Info() {
                <h3 className="text-xl font-bold text-slate-900">Dokumentasjon</h3>
              </div>
              <p className="text-slate-600 mb-4">
-               All nødvendig dokumentasjon for søknad til kommunen er tilgjengelig for våre forhandlere.
+               Vi i Smart Hjem AS sørger for at all nødvendig dokumentasjon er på plass, slik at du slipper papirmølla med kommunen.
              </p>
           </div>
         </div>
@@ -54,7 +82,7 @@ export default function Info() {
               Hvor ofte må anlegget tømmes?
             </AccordionTrigger>
             <AccordionContent className="text-slate-600 pb-4">
-              Biocleaner produserer svært lite slam sammenlignet med tradisjonelle anlegg. Normalt tømmeintervall er hvert 1-2 år, avhengig av bruk og modell.
+              BioCleaner produserer svært lite slam sammenlignet med tradisjonelle anlegg. Normalt tømmeintervall er hvert 1-2 år, avhengig av bruk og modell.
             </AccordionContent>
           </AccordionItem>
           
@@ -81,7 +109,7 @@ export default function Info() {
               Bruker det mye strøm?
             </AccordionTrigger>
             <AccordionContent className="text-slate-600 pb-4">
-              Nei, Biocleaner er designet for å være energieffektivt. Strømforbruket tilsvarer omtrent en lyspære som står på.
+              Nei, BioCleaner er designet for å være energieffektivt. Strømforbruket tilsvarer omtrent en lyspære som står på.
             </AccordionContent>
           </AccordionItem>
         </Accordion>

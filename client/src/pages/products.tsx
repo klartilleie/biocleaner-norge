@@ -2,8 +2,9 @@ import Layout from "@/components/layout";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Check, ArrowRight } from "lucide-react";
-import product1 from "@assets/generated_images/modern_biological_wastewater_treatment_unit.png";
-import product2 from "@assets/generated_images/cabin_in_nature_with_eco_sanitation.png";
+import product1 from "@assets/stock_images/underground_septic_t_302a33a2.jpg";
+import product2 from "@assets/stock_images/sewage_treatment_sys_ffd8c7ab.jpg";
+import product3 from "@assets/stock_images/sewage_treatment_sys_c4e05d14.jpg";
 
 export default function Products() {
   return (
@@ -15,7 +16,7 @@ export default function Products() {
               Våre Produkter
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed">
-              Biocleaner leverer markedets mest pålitelige minirenseanlegg. Enten du trenger løsning for en enkelt hytte eller et helt boligfelt, har vi teknologien som sikrer rent vann.
+              BioCleaner er markedets mest pålitelige minirenseanlegg for kloakk. Smart Hjem AS leverer komplette løsninger godkjent for norske forhold.
             </p>
           </div>
         </div>
@@ -28,7 +29,7 @@ export default function Products() {
             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl border border-slate-100 relative group">
               <img 
                 src={product1} 
-                alt="Biocleaner BC-Serie" 
+                alt="BioCleaner Installasjon" 
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent md:hidden"></div>
@@ -36,13 +37,13 @@ export default function Products() {
           </div>
           <div className="order-1 md:order-2 space-y-6">
             <Badge className="bg-primary/10 text-primary hover:bg-primary/20 px-4 py-1.5 text-sm rounded-full border-0">
-              Bestselger
+              Mest solgt
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900">
               BC-Serien for Bolig
             </h2>
             <p className="text-lg text-slate-600">
-              Vår toppmodell for eneboliger og flermannsboliger. BC-serien kombinerer avansert biologi med enkel drift. Anlegget er nedgravd og nesten usynlig i hagen.
+              Vår standardmodell for eneboliger. BC-serien er et fullbiologisk renseanlegg som effektivt renser svartvann (toalett) og gråvann. Anlegget graves ned og tar minimalt med plass på tomten.
             </p>
             
             <ul className="space-y-3 pt-4">
@@ -50,19 +51,19 @@ export default function Products() {
                 <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center shrink-0">
                   <Check className="h-4 w-4 text-green-600" />
                 </div>
-                <span>Kapasitet: 5 - 50 personekvivalenter (PE)</span>
+                <span>Tilfredsstiller strengeste utslippskrav</span>
               </li>
               <li className="flex items-center gap-3 text-slate-700">
                 <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center shrink-0">
                   <Check className="h-4 w-4 text-green-600" />
                 </div>
-                <span>Luktfritt og stillegående</span>
+                <span>Luktfritt og usynlig i hagen</span>
               </li>
               <li className="flex items-center gap-3 text-slate-700">
                 <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center shrink-0">
                   <Check className="h-4 w-4 text-green-600" />
                 </div>
-                <span>Lavt strømforbruk</span>
+                <span>Enkel adkomst for tømming</span>
               </li>
             </ul>
 
@@ -82,7 +83,7 @@ export default function Products() {
               Hytte & Fritid
             </h2>
             <p className="text-lg text-slate-600">
-              Spesialtilpassede løsninger for hytter med varierende belastning. Vår "feriemodus" sørger for at biologien overlever selv i perioder uten bruk.
+              Mange hyttekommuner innfører nå krav om rensing av utslipp også for fritidsboliger. BioCleaner for hytte er spesielt tilpasset varierende bruk og kuldeperioder.
             </p>
             
             <ul className="space-y-3 pt-4">
@@ -90,19 +91,19 @@ export default function Products() {
                 <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center shrink-0">
                   <Check className="h-4 w-4 text-green-600" />
                 </div>
-                <span>Tåler ujevn belastning</span>
+                <span>"Feriemodus" sparer strøm</span>
               </li>
               <li className="flex items-center gap-3 text-slate-700">
                 <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center shrink-0">
                   <Check className="h-4 w-4 text-green-600" />
                 </div>
-                <span>Kan installeres over bakken ved behov</span>
+                <span>Kan ettermonteres på eksisterende hytter</span>
               </li>
               <li className="flex items-center gap-3 text-slate-700">
                 <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center shrink-0">
                   <Check className="h-4 w-4 text-green-600" />
                 </div>
-                <span>Enkel vinterkonservering</span>
+                <span>Robust mot frost</span>
               </li>
             </ul>
 
@@ -114,10 +115,50 @@ export default function Products() {
             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl border border-slate-100 relative group">
               <img 
                 src={product2} 
-                alt="Hytte og Fritid" 
+                alt="BioCleaner Hytte" 
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
+          </div>
+        </div>
+
+        {/* Product Category 3 */}
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="order-2 md:order-1">
+            <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl border border-slate-100 relative group">
+              <img 
+                src={product3} 
+                alt="BioCleaner Fellesanlegg" 
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent md:hidden"></div>
+            </div>
+          </div>
+          <div className="order-1 md:order-2 space-y-6">
+            <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-200 px-4 py-1.5 text-sm rounded-full border-0">
+              Stor kapasitet
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900">
+              Fellesanlegg & Næring
+            </h2>
+            <p className="text-lg text-slate-600">
+              For grender, hyttefelt eller større bygg. Vi leverer skalerbare løsninger som håndterer store mengder avløpsvann kostnadseffektivt.
+            </p>
+            
+            <ul className="space-y-3 pt-4">
+              <li className="flex items-center gap-3 text-slate-700">
+                <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center shrink-0">
+                  <Check className="h-4 w-4 text-green-600" />
+                </div>
+                <span>Opp til 200 personekvivalenter (PE)</span>
+              </li>
+              <li className="flex items-center gap-3 text-slate-700">
+                <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center shrink-0">
+                  <Check className="h-4 w-4 text-green-600" />
+                </div>
+                <span>Sentralisert drift og vedlikehold</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -135,33 +176,29 @@ export default function Products() {
                <thead>
                  <tr className="bg-primary text-white">
                    <th className="p-4 text-left font-semibold">Modell</th>
+                   <th className="p-4 text-left font-semibold">Bruk</th>
                    <th className="p-4 text-left font-semibold">Kapasitet (PE)</th>
-                   <th className="p-4 text-left font-semibold">Diameter</th>
-                   <th className="p-4 text-left font-semibold">Høyde</th>
-                   <th className="p-4 text-left font-semibold">Vekt</th>
+                   <th className="p-4 text-left font-semibold">Diameter / Høyde</th>
                  </tr>
                </thead>
                <tbody className="divide-y divide-slate-100">
                  <tr className="hover:bg-slate-50 transition-colors">
                    <td className="p-4 font-medium text-primary">BC-5</td>
-                   <td className="p-4">1 husholdning (5 PE)</td>
-                   <td className="p-4">1.5m</td>
-                   <td className="p-4">2.2m</td>
-                   <td className="p-4">150kg</td>
+                   <td className="p-4">Enebolig / Hytte</td>
+                   <td className="p-4">1-5 personer</td>
+                   <td className="p-4">1.5m / 2.2m</td>
                  </tr>
                  <tr className="hover:bg-slate-50 transition-colors">
                    <td className="p-4 font-medium text-primary">BC-10</td>
-                   <td className="p-4">2 husholdninger (10 PE)</td>
-                   <td className="p-4">1.8m</td>
-                   <td className="p-4">2.4m</td>
-                   <td className="p-4">220kg</td>
+                   <td className="p-4">Stor enebolig / Tomannsbolig</td>
+                   <td className="p-4">6-10 personer</td>
+                   <td className="p-4">1.8m / 2.4m</td>
                  </tr>
                  <tr className="hover:bg-slate-50 transition-colors">
                    <td className="p-4 font-medium text-primary">BC-20</td>
-                   <td className="p-4">4 husholdninger (20 PE)</td>
-                   <td className="p-4">2.2m</td>
-                   <td className="p-4">2.6m</td>
-                   <td className="p-4">350kg</td>
+                   <td className="p-4">Firemannsbolig / Små felt</td>
+                   <td className="p-4">11-20 personer</td>
+                   <td className="p-4">2.2m / 2.6m</td>
                  </tr>
                </tbody>
              </table>
