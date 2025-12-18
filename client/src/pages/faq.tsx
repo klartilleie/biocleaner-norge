@@ -10,7 +10,7 @@ import { FileText, Gavel, AlertCircle, Building2 } from "lucide-react";
 export default function Info() {
   return (
     <Layout>
-       <div className="bg-slate-50 py-20">
+       <div className="bg-slate-50 pt-40 pb-12">
         <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold font-display text-slate-900 mb-6">
               Krav og Informasjon
