@@ -257,9 +257,13 @@ function ProductCard({ image, title, subtitle, features, highlight = false }: {
   highlight?: boolean 
 }) {
   return (
-    <div className={`bg-white rounded-2xl p-6 border transition-all hover:shadow-lg ${highlight ? 'border-primary shadow-md ring-2 ring-primary/20' : 'border-slate-200'}`}>
-      <div className="h-40 flex items-center justify-center mb-4">
-        <img src={image} alt={title} className="max-h-full object-contain" />
+    <div className={`bg-white rounded-2xl p-6 border transition-all hover:shadow-lg group ${highlight ? 'border-primary shadow-md ring-2 ring-primary/20' : 'border-slate-200'}`}>
+      <div className="h-40 flex items-center justify-center mb-4 overflow-hidden">
+        <img 
+          src={image} 
+          alt={title} 
+          className="max-h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110 group-hover:rotate-1" 
+        />
       </div>
       <h3 className="font-bold text-lg text-slate-900">{title}</h3>
       <p className="text-sm text-slate-500 mb-4">{subtitle}</p>

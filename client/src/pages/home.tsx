@@ -61,11 +61,11 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative hidden md:block"
           >
-            <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20">
+            <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 group">
               <img 
                 src={optimaProductImage} 
                 alt="BioCleaner Optima renseanlegg" 
-                className="w-full max-w-[300px] mx-auto"
+                className="w-full max-w-[300px] mx-auto transition-transform duration-500 ease-out group-hover:scale-105 group-hover:-translate-y-2"
               />
               <div className="text-center mt-6">
                 <div className="text-white font-bold text-xl">BioCleaner Optima</div>
@@ -161,14 +161,18 @@ export default function Home() {
             <div className="relative hidden md:block">
               <div className="bg-white rounded-3xl p-8 shadow-xl border border-slate-100">
                 <div className="grid grid-cols-2 gap-6">
-                  <div className="text-center">
-                    <img src={optimaProductImage} alt="BioCleaner Optima" className="h-40 mx-auto object-contain" />
-                    <div className="mt-4 font-bold text-slate-900">Optima</div>
+                  <div className="text-center group cursor-pointer">
+                    <div className="overflow-hidden">
+                      <img src={optimaProductImage} alt="BioCleaner Optima" className="h-40 mx-auto object-contain transition-transform duration-500 ease-out group-hover:scale-110 group-hover:-translate-y-1" />
+                    </div>
+                    <div className="mt-4 font-bold text-slate-900 group-hover:text-primary transition-colors">Optima</div>
                     <div className="text-sm text-slate-500">Standard</div>
                   </div>
-                  <div className="text-center">
-                    <img src={comfortProductImage} alt="BioCleaner Comfort" className="h-40 mx-auto object-contain" />
-                    <div className="mt-4 font-bold text-slate-900">Comfort</div>
+                  <div className="text-center group cursor-pointer">
+                    <div className="overflow-hidden">
+                      <img src={comfortProductImage} alt="BioCleaner Comfort" className="h-40 mx-auto object-contain transition-transform duration-500 ease-out group-hover:scale-110 group-hover:-translate-y-1" />
+                    </div>
+                    <div className="mt-4 font-bold text-slate-900 group-hover:text-primary transition-colors">Comfort</div>
                     <div className="text-sm text-slate-500">Med fjernstyring</div>
                   </div>
                 </div>
