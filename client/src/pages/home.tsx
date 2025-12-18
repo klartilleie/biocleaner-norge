@@ -73,15 +73,17 @@ export default function Home() {
               </div>
             </div>
             
-            {/* Floating stats card */}
-            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-slate-100 max-w-[240px]">
-              <div className="flex items-center gap-2 mb-2">
-                 <ShieldCheck className="text-green-500 w-6 h-6" />
-                 <span className="font-bold text-slate-900">CE Godkjent</span>
-              </div>
-              <div className="text-sm text-slate-600 font-medium">Oppfyller alle EU-krav til rensegrad og sikkerhet.</div>
-            </div>
           </motion.div>
+        </div>
+        
+        {/* SINTEF Badge - moved below hero */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 hidden md:block">
+          <div className="bg-white px-8 py-4 rounded-full shadow-xl border border-slate-100 flex items-center gap-3">
+            <ShieldCheck className="text-green-500 w-6 h-6" />
+            <span className="font-bold text-slate-900">SINTEF Godkjent</span>
+            <span className="text-slate-500">|</span>
+            <span className="text-sm text-slate-600">Oppfyller alle krav til rensegrad og sikkerhet</span>
+          </div>
         </div>
       </section>
 
