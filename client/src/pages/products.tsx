@@ -2,9 +2,9 @@ import Layout from "@/components/layout";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Check, ArrowRight } from "lucide-react";
-import product1 from "@assets/stock_images/underground_septic_t_302a33a2.jpg";
-import product2 from "@assets/stock_images/sewage_treatment_sys_ffd8c7ab.jpg";
-import product3 from "@assets/stock_images/sewage_treatment_sys_c4e05d14.jpg";
+import houseImage from "@assets/stock_images/modern_white_scandin_ee0df7ef.jpg";
+import cabinImage from "@assets/stock_images/scandinavian_wooden__eebe26dd.jpg";
+import communityImage from "@assets/stock_images/modern_white_scandin_177e9abd.jpg";
 
 export default function Products() {
   return (
@@ -28,8 +28,8 @@ export default function Products() {
           <div className="order-2 md:order-1">
             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl border border-slate-100 relative group">
               <img 
-                src={product1} 
-                alt="BioCleaner Installasjon" 
+                src={houseImage} 
+                alt="BioCleaner for bolig" 
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent md:hidden"></div>
@@ -114,7 +114,7 @@ export default function Products() {
            <div className="order-2">
             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl border border-slate-100 relative group">
               <img 
-                src={product2} 
+                src={cabinImage} 
                 alt="BioCleaner Hytte" 
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
@@ -127,7 +127,7 @@ export default function Products() {
           <div className="order-2 md:order-1">
             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl border border-slate-100 relative group">
               <img 
-                src={product3} 
+                src={communityImage} 
                 alt="BioCleaner Fellesanlegg" 
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />

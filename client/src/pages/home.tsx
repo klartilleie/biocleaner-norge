@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { ArrowRight, Leaf, ShieldCheck, Zap, AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import heroImage from "@assets/stock_images/small_wastewater_tre_057a0900.jpg";
-import product1 from "@assets/stock_images/underground_septic_t_302a33a2.jpg";
-import product2 from "@assets/stock_images/sewage_treatment_sys_ffd8c7ab.jpg";
+import houseImage from "@assets/stock_images/modern_white_scandin_ee0df7ef.jpg";
+import cabinImage from "@assets/stock_images/scandinavian_wooden__eebe26dd.jpg";
 
 export default function Home() {
   return (
@@ -118,7 +118,7 @@ export default function Home() {
                 <Link href="/produkter">
                   <div className="group cursor-pointer bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md hover:border-primary/50 transition-all flex items-center gap-6">
                     <div className="w-24 h-24 shrink-0 rounded-xl overflow-hidden bg-slate-100">
-                      <img src={product1} alt="Hus" className="w-full h-full object-cover" />
+                      <img src={houseImage} alt="Moderne bolighus" className="w-full h-full object-cover" />
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-slate-900 group-hover:text-primary transition-colors">For Hus & Bolig</h3>
@@ -131,7 +131,7 @@ export default function Home() {
                 <Link href="/produkter">
                   <div className="group cursor-pointer bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md hover:border-primary/50 transition-all flex items-center gap-6">
                     <div className="w-24 h-24 shrink-0 rounded-xl overflow-hidden bg-slate-100">
-                      <img src={product2} alt="Hytte" className="w-full h-full object-cover" />
+                      <img src={cabinImage} alt="Hytte i naturen" className="w-full h-full object-cover" />
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-slate-900 group-hover:text-primary transition-colors">For Hytte & Fritid</h3>
@@ -144,7 +144,7 @@ export default function Home() {
             </div>
             
             <div className="relative h-full min-h-[400px] rounded-3xl overflow-hidden shadow-2xl hidden md:block">
-              <img src={product1} alt="Product showcase" className="absolute inset-0 w-full h-full object-cover" />
+              <img src={houseImage} alt="Product showcase" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-8">
                 <div className="text-white">
                   <div className="inline-flex items-center gap-2 text-sm font-medium bg-primary px-3 py-1 rounded-full mb-3">
