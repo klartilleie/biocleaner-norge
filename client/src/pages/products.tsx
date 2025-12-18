@@ -9,6 +9,7 @@ const optimaProductImage = "https://www.biocleaner.no/uploads/1/2/8/5/128515706/
 const comfortProductImage = "https://www.biocleaner.no/uploads/1/2/8/5/128515706/editor/comfort.png";
 const exclusiveProductImage = "https://www.biocleaner.no/uploads/1/2/8/5/128515706/published/exclusive.png";
 const basicProductImage = "https://www.biocleaner.no/uploads/1/2/8/5/128515706/editor/basic.png";
+const bioboxImage = "https://www.biocleaner.no/uploads/1/2/8/5/128515706/rasteplasstoalett_1.png";
 
 export default function Products() {
   return (
@@ -160,6 +161,57 @@ export default function Products() {
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
+          </div>
+        </div>
+
+        {/* BioBox Rasteplasstoalett */}
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="order-2 md:order-1">
+            <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl border border-slate-100 relative group bg-slate-50 flex items-center justify-center p-8">
+              <img 
+                src={bioboxImage} 
+                alt="BioBox Rasteplasstoalett" 
+                className="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+          </div>
+          <div className="order-1 md:order-2 space-y-6">
+            <Badge className="bg-teal-100 text-teal-700 hover:bg-teal-200 px-4 py-1.5 text-sm rounded-full border-0">
+              Nyhet
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900">
+              BioBox Rasteplasstoalett
+            </h2>
+            <p className="text-lg text-slate-600">
+              Et komplett, mobilt toalettsystem som renser alt avløpsvann før det går tilbake til naturen. BioBox er modulært og kan tilpasses til rasteplasser, byggebransjen, messer, idrettsarrangementer og konserter.
+            </p>
+            
+            <ul className="space-y-3 pt-4">
+              <li className="flex items-center gap-3 text-slate-700">
+                <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center shrink-0">
+                  <Check className="h-4 w-4 text-green-600" />
+                </div>
+                <span>Mobilt og fleksibelt - kan leies eller kjøpes</span>
+              </li>
+              <li className="flex items-center gap-3 text-slate-700">
+                <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center shrink-0">
+                  <Check className="h-4 w-4 text-green-600" />
+                </div>
+                <span>Modulær løsning - tilpass kapasitet etter behov</span>
+              </li>
+              <li className="flex items-center gap-3 text-slate-700">
+                <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center shrink-0">
+                  <Check className="h-4 w-4 text-green-600" />
+                </div>
+                <span>SINTEF-godkjent renseanlegg</span>
+              </li>
+              <li className="flex items-center gap-3 text-slate-700">
+                <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center shrink-0">
+                  <Check className="h-4 w-4 text-green-600" />
+                </div>
+                <span>100% driftsavtale for service og renhold tilgjengelig</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
