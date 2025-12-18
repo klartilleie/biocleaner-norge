@@ -7,7 +7,7 @@ const diagramImage = "https://www.biocleaner.no/uploads/1/2/8/5/128515706/publis
 export default function Technology() {
   return (
     <Layout>
-      <div className="bg-gradient-to-b from-primary/5 to-transparent pt-20 pb-12">
+      <div className="bg-gradient-to-b from-primary/5 to-transparent pt-40 pb-12">
         <div className="container mx-auto px-4 text-center max-w-4xl">
            <h1 className="text-4xl md:text-6xl font-bold font-display text-slate-900 mb-6">
              Slik fungerer våre anlegg
