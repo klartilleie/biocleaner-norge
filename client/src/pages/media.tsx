@@ -23,23 +23,6 @@ export default function Media() {
 
       <div className="container mx-auto px-4 py-16 max-w-5xl">
         
-        {/* Featured Article */}
-        <article className="bg-white rounded-3xl shadow-lg overflow-hidden mb-16 p-8 md:p-12">
-          <div className="flex items-center gap-2 text-primary mb-4">
-            <Newspaper className="w-5 h-5" />
-            <span className="text-sm font-medium">AN.NO</span>
-          </div>
-          <h2 className="text-2xl md:text-3xl font-bold font-display text-slate-900 mb-4">
-            Nå kan du kompostere bæsjen din
-          </h2>
-          <p className="text-slate-600 mb-6 text-lg">
-            Om få år må de gamle septiktankene byttes ut med miljøvennlige renseanlegg. Da kan du rense avløpet med 100 prosent og kompostere slammet.
-          </p>
-          <p className="text-sm text-slate-500">
-            Tekst og bilder fra AN.NO / Foto: Lise Fagerbakk
-          </p>
-        </article>
-
         {/* Article Content */}
         <div className="prose prose-lg max-w-none mb-16">
           <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-xl mb-8">
