@@ -29,16 +29,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <div className="flex min-h-screen flex-col font-sans">
       <header
         className={cn(
-          "fixed top-0 z-50 w-full transition-all duration-300",
-          isScrolled
-            ? "bg-white/90 dark:bg-slate-950/90 backdrop-blur-md shadow-sm py-2"
-            : "bg-white/80 backdrop-blur-sm py-4"
+          "fixed top-0 z-50 w-full transition-all duration-300 bg-white shadow-sm",
+          isScrolled ? "py-2" : "py-3"
         )}
       >
         <div className="container mx-auto px-4 flex items-center justify-between">
           <Link href="/">
             <div className="flex items-center gap-3 cursor-pointer">
-              <img src={logoImage} alt="Smart Hjem AS" className="h-16 md:h-20 w-auto" />
+              <img src={logoImage} alt="Smart Hjem AS" className="h-20 md:h-24 w-auto" />
             </div>
           </Link>
 
