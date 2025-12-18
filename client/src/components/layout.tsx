@@ -36,7 +36,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-4 flex items-center justify-between">
           <Link href="/">
             <div className="flex items-center gap-3 cursor-pointer">
-              <img src={logoImage} alt="Smart Hjem AS" className="h-20 md:h-24 w-auto" />
+              <img src={logoImage} alt="Smart Hjem AS" className="h-24 md:h-28 w-auto" />
             </div>
           </Link>
 
