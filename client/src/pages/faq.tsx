@@ -59,7 +59,7 @@ export default function Info() {
                <h3 className="text-xl font-bold text-slate-900">Serviceavtale</h3>
              </div>
              <p className="text-slate-600 mb-4">
-               For å sikre optimal drift av ditt kloakkrenseanlegg anbefaler vi en årlig serviceavtale. Dette er også ofte et absolutt krav fra kommunen for å få utslippstillatelse.
+               Det er et lovpålagt krav fra norske myndigheter å ha en gyldig serviceavtale så lenge anlegget er i drift. Uten gyldig avtale vil utslippstillatelsen trekkes tilbake. Vi sørger for at ditt anlegg følges opp i henhold til regelverket.
              </p>
           </div>
           <div className="bg-green-50 p-8 rounded-2xl border border-green-100">
