@@ -1,10 +1,14 @@
 import Layout from "@/components/layout";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Check, ArrowRight } from "lucide-react";
+import { Check } from "lucide-react";
 import houseImage from "@assets/stock_images/modern_white_scandin_ee0df7ef.jpg";
 import cabinImage from "@assets/stock_images/scandinavian_wooden__eebe26dd.jpg";
-import communityImage from "@assets/stock_images/modern_white_scandin_177e9abd.jpg";
+
+const optimaProductImage = "https://www.biocleaner.no/uploads/1/2/8/5/128515706/editor/optima_2.png";
+const comfortProductImage = "https://www.biocleaner.no/uploads/1/2/8/5/128515706/editor/comfort.png";
+const exclusiveProductImage = "https://www.biocleaner.no/uploads/1/2/8/5/128515706/published/exclusive.png";
+const basicProductImage = "https://www.biocleaner.no/uploads/1/2/8/5/128515706/editor/basic.png";
 
 export default function Products() {
   return (
@@ -22,6 +26,40 @@ export default function Products() {
         </div>
       </div>
 
+      {/* Product Models Grid */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold font-display text-slate-900 mb-8 text-center">Våre modeller</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <ProductCard 
+              image={basicProductImage}
+              title="Optima Standard"
+              subtitle="Optimal løsning"
+              features={["Kan oppgraderes til COMFORT", "Selvbærende tank", "BC 6-30 PP"]}
+            />
+            <ProductCard 
+              image={comfortProductImage}
+              title="Comfort"
+              subtitle="Komfort-løsning"
+              features={["Kontrollenhet COMFORT Plus", "Fjernstyring", "BC 6-30 PP"]}
+              highlight
+            />
+            <ProductCard 
+              image={exclusiveProductImage}
+              title="Exclusive"
+              subtitle="Eksklusiv-løsning"
+              features={["Tertiær-filter", "Valgfri UV-rensing", "BC 6-30 PP"]}
+            />
+            <ProductCard 
+              image={optimaProductImage}
+              title="Hytte BC 6"
+              subtitle="For fritidsboliger"
+              features={["5 PE kapasitet", "Lavere modell tilgjengelig", "Robust mot frost"]}
+            />
+          </div>
+        </div>
+      </section>
+
       <div className="container mx-auto px-4 py-16 space-y-24">
         {/* Product Category 1 */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -32,7 +70,6 @@ export default function Products() {
                 alt="BioCleaner for bolig" 
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent md:hidden"></div>
             </div>
           </div>
           <div className="order-1 md:order-2 space-y-6">
@@ -40,10 +77,10 @@ export default function Products() {
               Mest solgt
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900">
-              BC-Serien for Bolig
+              For Bolig
             </h2>
             <p className="text-lg text-slate-600">
-              Vår standardmodell for eneboliger. BC-serien er et fullbiologisk renseanlegg som effektivt renser svartvann (toalett) og gråvann. Anlegget graves ned og tar minimalt med plass på tomten.
+              BC-serien er et fullbiologisk renseanlegg som effektivt renser svartvann (toalett) og gråvann. Anlegget graves ned og tar minimalt med plass på tomten. Kontinuerlig renseprosess uten bevegelige deler i selve renseanlegget.
             </p>
             
             <ul className="space-y-3 pt-4">
@@ -51,7 +88,7 @@ export default function Products() {
                 <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center shrink-0">
                   <Check className="h-4 w-4 text-green-600" />
                 </div>
-                <span>Tilfredsstiller strengeste utslippskrav</span>
+                <span>Tilfredsstiller alle EU-krav til rensegrad</span>
               </li>
               <li className="flex items-center gap-3 text-slate-700">
                 <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center shrink-0">
@@ -63,13 +100,15 @@ export default function Products() {
                 <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center shrink-0">
                   <Check className="h-4 w-4 text-green-600" />
                 </div>
-                <span>Enkel adkomst for tømming</span>
+                <span>15 års garanti på renseanlegg</span>
+              </li>
+              <li className="flex items-center gap-3 text-slate-700">
+                <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center shrink-0">
+                  <Check className="h-4 w-4 text-green-600" />
+                </div>
+                <span>100 års levetid</span>
               </li>
             </ul>
-
-            <div className="pt-6">
-               <Button className="rounded-full px-8" size="lg">Last ned produktark</Button>
-            </div>
           </div>
         </div>
 
@@ -91,7 +130,7 @@ export default function Products() {
                 <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center shrink-0">
                   <Check className="h-4 w-4 text-green-600" />
                 </div>
-                <span>"Feriemodus" sparer strøm</span>
+                <span>5 PE - minste kapasitet godkjent i Norge</span>
               </li>
               <li className="flex items-center gap-3 text-slate-700">
                 <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center shrink-0">
@@ -105,11 +144,13 @@ export default function Products() {
                 </div>
                 <span>Robust mot frost</span>
               </li>
+              <li className="flex items-center gap-3 text-slate-700">
+                <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center shrink-0">
+                  <Check className="h-4 w-4 text-green-600" />
+                </div>
+                <span>Kan brukes uten veiforbindelse</span>
+              </li>
             </ul>
-
-            <div className="pt-6">
-               <Button className="rounded-full px-8" size="lg">Les mer om hytteløsninger</Button>
-            </div>
           </div>
            <div className="order-2">
             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl border border-slate-100 relative group">
@@ -121,47 +162,40 @@ export default function Products() {
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Product Category 3 */}
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="order-2 md:order-1">
-            <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl border border-slate-100 relative group">
-              <img 
-                src={communityImage} 
-                alt="BioCleaner Fellesanlegg" 
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent md:hidden"></div>
+      {/* Fordeler Section */}
+      <section className="bg-slate-900 text-white py-24">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold font-display mb-12 text-center">Fordeler ved BioCleaner</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/10">
+              <h3 className="font-bold text-lg mb-2">Ingen bevegelige deler</h3>
+              <p className="text-slate-300 text-sm">Kontinuerlig renseprosess uten pumper for transport av vann mellom seksjoner.</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/10">
+              <h3 className="font-bold text-lg mb-2">Miljøvennlig</h3>
+              <p className="text-slate-300 text-sm">Problemfri, miljøvennlig prosess og høyeffektiv fjerning av organisk forurensning.</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/10">
+              <h3 className="font-bold text-lg mb-2">Lave driftskostnader</h3>
+              <p className="text-slate-300 text-sm">Lavt strømforbruk og minimalt vedlikehold gir lave årlige kostnader.</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/10">
+              <h3 className="font-bold text-lg mb-2">Høy kvalitet</h3>
+              <p className="text-slate-300 text-sm">8mm tykke vegger (mot normal 5mm). Uresirkulert høykvalitetsplast.</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/10">
+              <h3 className="font-bold text-lg mb-2">Enkel styreenhet</h3>
+              <p className="text-slate-300 text-sm">Uten printkort og elektronikk - robust og pålitelig i alle forhold.</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/10">
+              <h3 className="font-bold text-lg mb-2">Komplett service</h3>
+              <p className="text-slate-300 text-sm">Vedlikeholdspakke inkluderer alt - også bytte av pumpe og kjemi.</p>
             </div>
           </div>
-          <div className="order-1 md:order-2 space-y-6">
-            <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-200 px-4 py-1.5 text-sm rounded-full border-0">
-              Stor kapasitet
-            </Badge>
-            <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900">
-              Fellesanlegg & Næring
-            </h2>
-            <p className="text-lg text-slate-600">
-              For grender, hyttefelt eller større bygg. Vi leverer skalerbare løsninger som håndterer store mengder avløpsvann kostnadseffektivt.
-            </p>
-            
-            <ul className="space-y-3 pt-4">
-              <li className="flex items-center gap-3 text-slate-700">
-                <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center shrink-0">
-                  <Check className="h-4 w-4 text-green-600" />
-                </div>
-                <span>Opp til 200 personekvivalenter (PE)</span>
-              </li>
-              <li className="flex items-center gap-3 text-slate-700">
-                <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center shrink-0">
-                  <Check className="h-4 w-4 text-green-600" />
-                </div>
-                <span>Sentralisert drift og vedlikehold</span>
-              </li>
-            </ul>
-          </div>
         </div>
-      </div>
+      </section>
       
       {/* Comparison Table Section */}
       <section className="bg-slate-50 py-24">
@@ -183,22 +217,28 @@ export default function Products() {
                </thead>
                <tbody className="divide-y divide-slate-100">
                  <tr className="hover:bg-slate-50 transition-colors">
-                   <td className="p-4 font-medium text-primary">BC-5</td>
-                   <td className="p-4">Enebolig / Hytte</td>
-                   <td className="p-4">1-5 personer</td>
-                   <td className="p-4">1.5m / 2.2m</td>
+                   <td className="p-4 font-medium text-primary">BC 6 Optima</td>
+                   <td className="p-4">Hytte / Liten bolig</td>
+                   <td className="p-4">5 personer</td>
+                   <td className="p-4">160cm / 205cm</td>
                  </tr>
                  <tr className="hover:bg-slate-50 transition-colors">
-                   <td className="p-4 font-medium text-primary">BC-10</td>
-                   <td className="p-4">Stor enebolig / Tomannsbolig</td>
-                   <td className="p-4">6-10 personer</td>
-                   <td className="p-4">1.8m / 2.4m</td>
+                   <td className="p-4 font-medium text-primary">BC 10 Optima</td>
+                   <td className="p-4">Enebolig</td>
+                   <td className="p-4">8 personer</td>
+                   <td className="p-4">170cm / 230cm</td>
                  </tr>
                  <tr className="hover:bg-slate-50 transition-colors">
-                   <td className="p-4 font-medium text-primary">BC-20</td>
-                   <td className="p-4">Firemannsbolig / Små felt</td>
-                   <td className="p-4">11-20 personer</td>
-                   <td className="p-4">2.2m / 2.6m</td>
+                   <td className="p-4 font-medium text-primary">BC 20</td>
+                   <td className="p-4">Tomannsbolig / Små felt</td>
+                   <td className="p-4">16 personer</td>
+                   <td className="p-4">200cm / 250cm</td>
+                 </tr>
+                 <tr className="hover:bg-slate-50 transition-colors">
+                   <td className="p-4 font-medium text-primary">BC 30</td>
+                   <td className="p-4">Fellesanlegg</td>
+                   <td className="p-4">24 personer</td>
+                   <td className="p-4">220cm / 260cm</td>
                  </tr>
                </tbody>
              </table>
@@ -206,5 +246,31 @@ export default function Products() {
         </div>
       </section>
     </Layout>
+  );
+}
+
+function ProductCard({ image, title, subtitle, features, highlight = false }: { 
+  image: string, 
+  title: string, 
+  subtitle: string, 
+  features: string[],
+  highlight?: boolean 
+}) {
+  return (
+    <div className={`bg-white rounded-2xl p-6 border transition-all hover:shadow-lg ${highlight ? 'border-primary shadow-md ring-2 ring-primary/20' : 'border-slate-200'}`}>
+      <div className="h-40 flex items-center justify-center mb-4">
+        <img src={image} alt={title} className="max-h-full object-contain" />
+      </div>
+      <h3 className="font-bold text-lg text-slate-900">{title}</h3>
+      <p className="text-sm text-slate-500 mb-4">{subtitle}</p>
+      <ul className="space-y-2">
+        {features.map((feature, i) => (
+          <li key={i} className="flex items-start gap-2 text-sm text-slate-600">
+            <Check className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+            <span>{feature}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }

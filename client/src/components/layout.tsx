@@ -1,9 +1,10 @@
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
-import { Droplets, Leaf, Menu, Waves } from "lucide-react";
+import { Leaf, Menu, Waves, Droplets } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import logoImage from "@assets/Lars_Logo-01_1766086176301.jpg";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
@@ -30,15 +31,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         className={cn(
           "fixed top-0 z-50 w-full transition-all duration-300",
           isScrolled
-            ? "bg-white/80 dark:bg-slate-950/80 backdrop-blur-md shadow-sm py-4"
-            : "bg-transparent py-6"
+            ? "bg-white/90 dark:bg-slate-950/90 backdrop-blur-md shadow-sm py-2"
+            : "bg-white/80 backdrop-blur-sm py-4"
         )}
       >
         <div className="container mx-auto px-4 flex items-center justify-between">
           <Link href="/">
-            <div className="flex items-center gap-2 text-2xl font-bold font-display text-primary cursor-pointer">
-              <Droplets className="h-8 w-8 fill-primary/20" />
-              <span>BioCleaner</span>
+            <div className="flex items-center gap-3 cursor-pointer">
+              <img src={logoImage} alt="Smart Hjem AS" className="h-12 md:h-14 w-auto" />
             </div>
           </Link>
 
@@ -74,7 +74,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-                <nav className="flex flex-col gap-4 mt-8">
+                <div className="mb-6">
+                  <img src={logoImage} alt="Smart Hjem AS" className="h-12 w-auto" />
+                </div>
+                <nav className="flex flex-col gap-4">
                   {navLinks.map((link) => (
                     <Link key={link.href} href={link.href}>
                       <div
@@ -102,12 +105,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             <div className="space-y-4">
-              <div className="flex items-center gap-2 text-2xl font-bold font-display text-white">
-                <Droplets className="h-6 w-6 fill-white/20" />
-                <span>BioCleaner</span>
+              <div className="bg-white rounded-lg p-3 inline-block">
+                <img src={logoImage} alt="Smart Hjem AS" className="h-10 w-auto" />
               </div>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Levert av Smart Hjem AS.
+                Smart Hjem AS leverer BioCleaner minirenseanlegg.
                 Markedets beste løsning for rensing av kloakk i spredt bebyggelse.
               </p>
             </div>
@@ -130,10 +132,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div>
               <h3 className="font-semibold text-white mb-4">Produkter</h3>
               <ul className="space-y-2 text-sm text-slate-400">
-                <li>Minirenseanlegg for hus</li>
+                <li>BioCleaner Optima</li>
+                <li>BioCleaner Comfort</li>
+                <li>BioCleaner Exclusive</li>
                 <li>Løsninger for hytter</li>
-                <li>Fellesanlegg</li>
-                <li>Serviceavtaler</li>
               </ul>
             </div>
 

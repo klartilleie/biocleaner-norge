@@ -3,16 +3,26 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight, Leaf, ShieldCheck, Zap, AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
-import heroImage from "@assets/stock_images/small_wastewater_tre_057a0900.jpg";
-import houseImage from "@assets/stock_images/modern_white_scandin_ee0df7ef.jpg";
+import heroImage from "@assets/stock_images/beautiful_crystal_cl_030f7be6.jpg";
 import cabinImage from "@assets/stock_images/scandinavian_wooden__eebe26dd.jpg";
+import houseImage from "@assets/stock_images/modern_white_scandin_ee0df7ef.jpg";
+
+const optimaProductImage = "https://www.biocleaner.no/uploads/1/2/8/5/128515706/editor/optima_2.png";
+const comfortProductImage = "https://www.biocleaner.no/uploads/1/2/8/5/128515706/editor/comfort.png";
 
 export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden bg-slate-50">
-        <div className="absolute inset-0 z-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] hidden md:block"></div>
+      <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src={heroImage} 
+            alt="Rent vann i naturen" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/60 to-transparent"></div>
+        </div>
         
         <div className="container mx-auto px-4 z-10 grid md:grid-cols-2 gap-12 items-center">
           <motion.div 
@@ -21,14 +31,14 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="space-y-6"
           >
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-800 text-sm font-medium border border-green-200">
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-green-500/20 text-green-300 text-sm font-medium border border-green-500/30">
               <Leaf className="w-4 h-4 mr-2" />
               Godkjent for norske forhold
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold font-display leading-tight text-slate-900">
-              Effektiv rensing av <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-cyan-500">kloakk</span> for hus og hytte
+            <h1 className="text-4xl md:text-6xl font-bold font-display leading-tight text-white">
+              Effektiv rensing av <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">kloakk</span> for hus og hytte
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
+            <p className="text-xl text-slate-300 leading-relaxed max-w-lg">
               BioCleaner fra Smart Hjem AS møter alle kommunale krav til rensing. En driftssikker og luktfri løsning for fremtiden.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -38,7 +48,7 @@ export default function Home() {
                 </Button>
               </Link>
               <Link href="/info">
-                <Button variant="outline" size="lg" className="rounded-full px-8 text-lg h-14 bg-white/50 backdrop-blur-sm border-slate-300 hover:bg-white">
+                <Button variant="outline" size="lg" className="rounded-full px-8 text-lg h-14 bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 hover:text-white">
                   Krav fra kommunen
                 </Button>
               </Link>
@@ -49,24 +59,27 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative"
+            className="relative hidden md:block"
           >
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white ring-1 ring-slate-900/5 aspect-[4/3] md:aspect-square">
+            <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20">
               <img 
-                src={heroImage} 
-                alt="BioCleaner renseanlegg ferdig installert i hage" 
-                className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-700"
+                src={optimaProductImage} 
+                alt="BioCleaner Optima renseanlegg" 
+                className="w-full max-w-[300px] mx-auto"
               />
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent"></div>
+              <div className="text-center mt-6">
+                <div className="text-white font-bold text-xl">BioCleaner Optima</div>
+                <div className="text-slate-300 mt-1">Vår mest populære modell</div>
+              </div>
             </div>
             
             {/* Floating stats card */}
-            <div className="absolute -bottom-6 -left-6 md:bottom-10 md:-left-10 bg-white p-6 rounded-2xl shadow-xl border border-slate-100 max-w-[240px]">
+            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-slate-100 max-w-[240px]">
               <div className="flex items-center gap-2 mb-2">
                  <ShieldCheck className="text-green-500 w-6 h-6" />
-                 <span className="font-bold text-slate-900">SINTEF Godkjent</span>
+                 <span className="font-bold text-slate-900">CE Godkjent</span>
               </div>
-              <div className="text-sm text-slate-600 font-medium">Oppfyller alle krav til rensegrad og sikkerhet.</div>
+              <div className="text-sm text-slate-600 font-medium">Oppfyller alle EU-krav til rensegrad og sikkerhet.</div>
             </div>
           </motion.div>
         </div>
@@ -91,7 +104,7 @@ export default function Home() {
             <FeatureCard 
               icon={<Leaf className="w-10 h-10 text-green-500" />}
               title="Biologisk Rensing"
-              description="100% naturlig prosess uten skadelige kjemikalier. Det rensede vannet kan slippes rett ut i naturen."
+              description="Kontinuerlig renseprosess uten bevegelige deler i selve anlegget. Det rensede vannet kan slippes ut i naturen."
             />
             <FeatureCard 
               icon={<Zap className="w-10 h-10 text-amber-500" />}
@@ -135,7 +148,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-slate-900 group-hover:text-primary transition-colors">For Hytte & Fritid</h3>
-                      <p className="text-slate-500 mt-1">Smarte anlegg med feriemodus for ujevn belastning.</p>
+                      <p className="text-slate-500 mt-1">Smarte anlegg tilpasset varierende belastning.</p>
                     </div>
                     <ArrowRight className="ml-auto w-6 h-6 text-slate-300 group-hover:text-primary transition-colors" />
                   </div>
@@ -143,16 +156,19 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="relative h-full min-h-[400px] rounded-3xl overflow-hidden shadow-2xl hidden md:block">
-              <img src={houseImage} alt="Product showcase" className="absolute inset-0 w-full h-full object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-8">
-                <div className="text-white">
-                  <div className="inline-flex items-center gap-2 text-sm font-medium bg-primary px-3 py-1 rounded-full mb-3">
-                    <AlertTriangle className="w-4 h-4" />
-                    Krav om rensing?
+            <div className="relative hidden md:block">
+              <div className="bg-white rounded-3xl p-8 shadow-xl border border-slate-100">
+                <div className="grid grid-cols-2 gap-6">
+                  <div className="text-center">
+                    <img src={optimaProductImage} alt="BioCleaner Optima" className="h-40 mx-auto object-contain" />
+                    <div className="mt-4 font-bold text-slate-900">Optima</div>
+                    <div className="text-sm text-slate-500">Standard</div>
                   </div>
-                  <div className="text-2xl font-bold">Vi hjelper deg med søknaden</div>
-                  <p className="text-slate-300 mt-2">Smart Hjem AS har lang erfaring med kommunale prosesser.</p>
+                  <div className="text-center">
+                    <img src={comfortProductImage} alt="BioCleaner Comfort" className="h-40 mx-auto object-contain" />
+                    <div className="mt-4 font-bold text-slate-900">Comfort</div>
+                    <div className="text-sm text-slate-500">Med fjernstyring</div>
+                  </div>
                 </div>
               </div>
             </div>
