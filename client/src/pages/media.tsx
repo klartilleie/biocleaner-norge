@@ -24,31 +24,20 @@ export default function Media() {
       <div className="container mx-auto px-4 py-16 max-w-5xl">
         
         {/* Featured Article */}
-        <article className="bg-white rounded-3xl shadow-lg overflow-hidden mb-16">
-          <div className="md:grid md:grid-cols-2">
-            <div className="aspect-video md:aspect-auto">
-              <img 
-                src={articleImage1} 
-                alt="BioCleaner i media" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="p-8 md:p-12 flex flex-col justify-center">
-              <div className="flex items-center gap-2 text-primary mb-4">
-                <Newspaper className="w-5 h-5" />
-                <span className="text-sm font-medium">AN.NO</span>
-              </div>
-              <h2 className="text-2xl md:text-3xl font-bold font-display text-slate-900 mb-4">
-                Nå kan du kompostere bæsjen din
-              </h2>
-              <p className="text-slate-600 mb-6">
-                Om få år må de gamle septiktankene byttes ut med miljøvennlige renseanlegg. Da kan du rense avløpet med 100 prosent og kompostere slammet.
-              </p>
-              <p className="text-sm text-slate-500">
-                Tekst og bilder fra AN.NO / Foto: Lise Fagerbakk
-              </p>
-            </div>
+        <article className="bg-white rounded-3xl shadow-lg overflow-hidden mb-16 p-8 md:p-12">
+          <div className="flex items-center gap-2 text-primary mb-4">
+            <Newspaper className="w-5 h-5" />
+            <span className="text-sm font-medium">AN.NO</span>
           </div>
+          <h2 className="text-2xl md:text-3xl font-bold font-display text-slate-900 mb-4">
+            Nå kan du kompostere bæsjen din
+          </h2>
+          <p className="text-slate-600 mb-6 text-lg">
+            Om få år må de gamle septiktankene byttes ut med miljøvennlige renseanlegg. Da kan du rense avløpet med 100 prosent og kompostere slammet.
+          </p>
+          <p className="text-sm text-slate-500">
+            Tekst og bilder fra AN.NO / Foto: Lise Fagerbakk
+          </p>
         </article>
 
         {/* Article Content */}
