@@ -38,7 +38,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-4 flex items-center justify-between">
           <Link href="/">
             <div className="flex items-center gap-3 cursor-pointer">
-              <img src={logoImage} alt="Smart Hjem AS" className="h-12 md:h-14 w-auto" />
+              <img src={logoImage} alt="Smart Hjem AS" className="h-16 md:h-20 w-auto" />
             </div>
           </Link>
 
@@ -75,7 +75,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <div className="mb-6">
-                  <img src={logoImage} alt="Smart Hjem AS" className="h-12 w-auto" />
+                  <img src={logoImage} alt="Smart Hjem AS" className="h-16 w-auto" />
                 </div>
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) => (
@@ -105,8 +105,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             <div className="space-y-4">
-              <div className="bg-white rounded-lg p-3 inline-block">
-                <img src={logoImage} alt="Smart Hjem AS" className="h-10 w-auto" />
+              <div className="bg-white rounded-lg p-4 inline-block">
+                <img src={logoImage} alt="Smart Hjem AS" className="h-14 w-auto" />
               </div>
               <p className="text-slate-400 text-sm leading-relaxed">
                 Smart Hjem AS leverer BioCleaner minirenseanlegg.
