@@ -100,9 +100,8 @@ export default function Info() {
                  <p className="text-lg text-slate-700 leading-relaxed">
                    Stadig flere norske kommuner strammer inn kravene til private avløp. Dette gjøres for å hindre forurensning av bekker, elver og grunnvann. 
                  </p>
-                 <p className="text-lg text-slate-700 leading-relaxed">
-                   Hvis du har mottatt varsel om pålegg, må du installere en godkjent renseløsning. BioCleaner er SINTEF-godkjent og tilfredsstiller alle standardkrav (BOF5, Fosfor, etc.).
-                 </p>
+                 <p className="text-lg text-slate-700 leading-relaxed">Hvis du har mottatt varsel om pålegg, må du installere en godkjent renseløsning.
+                 BioCleaner er SINTEF-godkjent og tilfredsstiller alle standardkrav (BOF5, Fosfor, etc.).</p>
                  <p className="text-lg text-slate-700 leading-relaxed">Et renseanlegg for bolig med 5 PE (personer) starter fra ca. kr 115 000,- inkl. mva og innregulert.  Styreskap, søknad, graving og montering kommer i tillegg.</p>
                  <div className="pt-2">
                    <h3 className="font-bold text-slate-900 mb-2">Vi bistår med:</h3>
