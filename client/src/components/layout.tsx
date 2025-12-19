@@ -97,9 +97,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
       </header>
-
       <main className="flex-1 pt-0">{children}</main>
-
       <footer className="bg-slate-900 text-slate-200 py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -128,7 +126,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </ul>
             </div>
 
-            <div>
+            <div className="text-[23px] ml-[0px] mr-[0px]">
               <h3 className="font-semibold text-white mb-4">Miljøfokus</h3>
               <div className="flex gap-4">
                 <Leaf className="h-6 w-6 text-green-400" />
