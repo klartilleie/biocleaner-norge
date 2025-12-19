@@ -102,7 +102,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
       <footer className="bg-slate-900 text-slate-200 py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="space-y-4">
               <div className="bg-white rounded-lg p-4 inline-block">
                 <img src={logoImage} alt="Smart Hjem AS" className="h-14 w-auto" />
@@ -125,16 +125,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     </Link>
                   </li>
                 ))}
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="font-semibold text-white mb-4">Produkter</h3>
-              <ul className="space-y-2 text-sm text-slate-400">
-                <li>BioCleaner Optima</li>
-                <li>BioCleaner Comfort</li>
-                <li>BioCleaner Exclusive</li>
-                <li>Løsninger for hytter</li>
               </ul>
             </div>
 
