@@ -47,7 +47,7 @@ export default function Home() {
                   Se våre anlegg
                 </Button>
               </Link>
-              <Link href="/info">
+              <Link href="/krav">
                 <Button variant="outline" size="lg" className="rounded-full px-8 text-lg h-14 bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 hover:text-white">
                   Krav fra kommunen
                 </Button>
