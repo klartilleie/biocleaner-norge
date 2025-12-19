@@ -20,7 +20,6 @@ export default function Media() {
           </p>
         </div>
       </div>
-
       <div className="container mx-auto px-4 py-16 max-w-5xl">
         
         {/* Article Content */}
@@ -63,7 +62,7 @@ export default function Media() {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-xl font-bold text-slate-900 mb-4">Serviceavtale inkludert</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-4">Serviceavtale </h3>
               <p className="text-slate-600">
                 Det følger en pliktig serviceavtale til hvert anlegg. Da har vi det hele og fulle driftsansvaret 365 dager i året.
               </p>
