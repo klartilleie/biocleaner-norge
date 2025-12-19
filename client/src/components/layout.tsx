@@ -133,10 +133,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <Waves className="h-6 w-6 text-blue-400" />
                 <Droplets className="h-6 w-6 text-cyan-400" />
               </div>
-              <p className="mt-4 text-xs text-slate-500">
-                Vi bidrar til et renere Norge ved å tilby de mest effektive
-                renseløsningene på markedet.
-              </p>
+              <p className="mt-4 text-slate-500 text-[16px]">Vi bidrar til et renere Norge 
+              ved å tilby de mest effektive renseløsningene på markedet.</p>
             </div>
           </div>
           <div className="border-t border-slate-800 mt-12 pt-8 text-center text-xs text-slate-600">
