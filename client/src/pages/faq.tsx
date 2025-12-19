@@ -145,34 +145,24 @@ export default function Info() {
         <section className="mb-16">
           <h2 className="text-2xl md:text-3xl font-bold font-display text-slate-900 mb-8">Våre modellvarianter</h2>
           
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white p-6 rounded-2xl border border-slate-200">
-              <h3 className="font-bold text-lg text-primary mb-2">Basic</h3>
-              <p className="text-sm text-slate-500 mb-3">Økonomi-løsning</p>
-              <ul className="space-y-2 text-sm text-slate-600">
-                <li>• Rimeligste variant</li>
-                <li>• Kan ikke oppgraderes</li>
-                <li>• Tanktyper: BC4PP, BC 6PP, BC4 PP N, BC 6 PP</li>
-              </ul>
-            </div>
-            
+          <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-2xl border border-slate-200">
               <h3 className="font-bold text-lg text-primary mb-2">Optima</h3>
-              <p className="text-sm text-slate-500 mb-3">Optimal løsning</p>
+              <p className="text-sm text-slate-500 mb-3">Optimal-løsning</p>
               <ul className="space-y-2 text-sm text-slate-600">
                 <li>• Kan oppgraderes til COMFORT</li>
                 <li>• Selvbærende tank</li>
-                <li>• Tanktyper: BC 4 PP til BC 30 PP</li>
+                <li>• Tanktyper: BC 6-30 PP, BC 6-30 B, BC 20 B</li>
               </ul>
             </div>
             
             <div className="bg-white p-6 rounded-2xl border border-primary shadow-md ring-2 ring-primary/20">
               <h3 className="font-bold text-lg text-primary mb-2">Comfort</h3>
-              <p className="text-sm text-slate-500 mb-3">Komfort-løsning (anbefalt)</p>
+              <p className="text-sm text-slate-500 mb-3">Komfort-løsning</p>
               <ul className="space-y-2 text-sm text-slate-600">
                 <li>• Kontrollenhet COMFORT Plus</li>
-                <li>• Fjernstyring inkludert</li>
-                <li>• Tanktyper: BC 4 PP til BC 30 PP</li>
+                <li>• Fjernstyring</li>
+                <li>• Tanktyper: BC 4 PP, BC 6-30 PP, BC 4 B, BC 20 B</li>
               </ul>
             </div>
             
@@ -180,9 +170,9 @@ export default function Info() {
               <h3 className="font-bold text-lg text-primary mb-2">Exclusive</h3>
               <p className="text-sm text-slate-500 mb-3">Eksklusiv-løsning</p>
               <ul className="space-y-2 text-sm text-slate-600">
-                <li>• Tertiært filter</li>
-                <li>• Valgfri intern UV-desinfeksjon</li>
-                <li>• Tanktyper: BC 4PP til BC 30 PP</li>
+                <li>• Tertiær-filter</li>
+                <li>• Valgfri intern UV-rensing</li>
+                <li>• Tanktyper: BC 6-30 PP, BC 6-30 B, BC 20 B</li>
               </ul>
             </div>
           </div>

@@ -31,31 +31,25 @@ export default function Products() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold font-display text-slate-900 mb-8 text-center">Våre modeller</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ProductCard 
-              image={basicProductImage}
-              title="Optima Standard"
-              subtitle="Optimal løsning"
-              features={["Kan oppgraderes til COMFORT", "Selvbærende tank", "BC 6-30 PP"]}
+              image={optimaProductImage}
+              title="Optima"
+              subtitle="Optimal-løsning"
+              features={["Kan oppgraderes til COMFORT", "Selvbærende tank", "BC 6-30 PP, BC 6-30 B, BC 20 B"]}
             />
             <ProductCard 
               image={comfortProductImage}
               title="Comfort"
               subtitle="Komfort-løsning"
-              features={["Kontrollenhet COMFORT Plus", "Fjernstyring", "BC 6-30 PP"]}
+              features={["Kontrollenhet COMFORT Plus", "Fjernstyring", "BC 4-30 PP, BC 4 B, BC 20 B"]}
               highlight
             />
             <ProductCard 
               image={exclusiveProductImage}
               title="Exclusive"
               subtitle="Eksklusiv-løsning"
-              features={["Tertiær-filter", "Valgfri UV-rensing", "BC 6-30 PP"]}
-            />
-            <ProductCard 
-              image={optimaProductImage}
-              title="Hytte BC 6"
-              subtitle="For fritidsboliger"
-              features={["5 PE kapasitet", "Lavere modell tilgjengelig", "Robust mot frost"]}
+              features={["Tertiær-filter", "Valgfri intern UV-rensing", "BC 6-30 PP, BC 6-30 B, BC 20 B"]}
             />
           </div>
         </div>
