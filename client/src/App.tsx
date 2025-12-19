@@ -9,6 +9,7 @@ import Products from "@/pages/products";
 import Technology from "@/pages/technology";
 import Info from "@/pages/faq";
 import Media from "@/pages/media";
+import Krav from "@/pages/krav";
 
 function Router() {
   return (
@@ -18,6 +19,7 @@ function Router() {
       <Route path="/teknologi" component={Technology} />
       <Route path="/info" component={Info} />
       <Route path="/media" component={Media} />
+      <Route path="/krav" component={Krav} />
       <Route component={NotFound} />
     </Switch>
   );

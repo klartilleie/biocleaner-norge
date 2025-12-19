@@ -24,6 +24,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     { href: "/teknologi", label: "Teknologi" },
     { href: "/info", label: "Fakta & Spørsmål" },
     { href: "/media", label: "I Media" },
+    { href: "/krav", label: "Kontakt" },
   ];
 
   return (
