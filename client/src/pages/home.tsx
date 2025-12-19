@@ -61,7 +61,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative hidden md:block"
           >
-            <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 group">
+            <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 group text-[19px]">
               <img 
                 src={optimaProductImage} 
                 alt="BioCleaner Optima renseanlegg" 
@@ -86,7 +86,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Features Section */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
@@ -116,7 +115,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Product Teaser */}
       <section className="py-24 bg-slate-50">
         <div className="container mx-auto px-4">
@@ -181,7 +179,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* CTA Section */}
       <section className="py-24 bg-primary text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
