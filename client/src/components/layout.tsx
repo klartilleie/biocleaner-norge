@@ -102,9 +102,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="space-y-4">
-              <div className="bg-white rounded-lg p-4 inline-block">
-                <img src={logoImage} alt="Smart Hjem AS" className="h-14 w-auto" />
-              </div>
               <p className="text-slate-400 text-sm leading-relaxed">
                 Smart Hjem AS leverer BioCleaner minirenseanlegg.
                 Markedets beste løsning for rensing av kloakk i spredt bebyggelse.
