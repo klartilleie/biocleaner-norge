@@ -10,17 +10,16 @@ import { FileText, Gavel, AlertCircle, Building2, Droplets, Zap, Shield, Leaf, C
 export default function Info() {
   return (
     <Layout>
-       <div className="bg-slate-50 pt-40 pb-12">
-        <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold font-display text-slate-900 mb-6">
-              Fakta og Spørsmål
-            </h1>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              Alt du trenger å vite om BioCleaner minirenseanlegg og kommunale krav.
-            </p>
-        </div>
-      </div>
-
+      <div className="bg-slate-50 pt-40 pb-12">
+       <div className="container mx-auto px-4 text-center">
+           <h1 className="text-4xl md:text-5xl font-bold font-display text-slate-900 mb-6">
+             Fakta og Spørsmål
+           </h1>
+           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+             Alt du trenger å vite om BioCleaner minirenseanlegg og kommunale krav.
+           </p>
+       </div>
+     </div>
       <div className="container mx-auto px-4 py-16 max-w-5xl">
         
         {/* Facts Section */}
@@ -104,9 +103,7 @@ export default function Info() {
                  <p className="text-lg text-slate-700 leading-relaxed">
                    Hvis du har mottatt varsel om pålegg, må du installere en godkjent renseløsning. BioCleaner er SINTEF-godkjent og tilfredsstiller alle standardkrav (BOF5, Fosfor, etc.).
                  </p>
-                 <p className="text-lg text-slate-700 leading-relaxed">
-                   Et renseanlegg for bolig med 5 PE (personer) starter fra ca. kr 115 000,- inkl. mva og innregulert. Tilvalg som styreskap, søknad, graving og montering leveres mot tillegg.
-                 </p>
+                 <p className="text-lg text-slate-700 leading-relaxed">Et renseanlegg for bolig med 5 PE (personer) starter fra ca. kr 115 000,- inkl. mva og innregulert.  Styreskap, søknad, graving og montering kommer i tillegg.</p>
                  <div className="pt-2">
                    <h3 className="font-bold text-slate-900 mb-2">Vi bistår med:</h3>
                    <ul className="grid sm:grid-cols-2 gap-2">
