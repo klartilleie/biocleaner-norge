@@ -4,7 +4,7 @@ import { Leaf, Menu, Waves, Droplets } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import logoImage from "@assets/Lars_Logo-01_1766086176301.jpg";
+import logoImage from "@assets/Smart_Hjem_As_-_FinalizedLogoD2L5_(Transparent)-01_1767368825234.png";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
