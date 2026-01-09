@@ -1,7 +1,7 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
-import { storage } from "./storage";
 import { insertContactMessageSchema } from "@shared/schema";
+import { sendContactEmail } from "./email";
 
 export async function registerRoutes(
   httpServer: Server,
@@ -14,11 +14,11 @@ export async function registerRoutes(
         return res.status(400).json({ error: "Ugyldig data", details: parsed.error.errors });
       }
       
-      const message = await storage.createContactMessage(parsed.data);
+      await sendContactEmail(parsed.data);
       res.status(201).json({ success: true, message: "Takk for din henvendelse! Vi tar kontakt snart." });
     } catch (error) {
-      console.error("Error creating contact message:", error);
-      res.status(500).json({ error: "Noe gikk galt. Prøv igjen senere." });
+      console.error("Error sending contact email:", error);
+      res.status(500).json({ error: "Kunne ikke sende melding. Prøv igjen senere." });
     }
   });
 
