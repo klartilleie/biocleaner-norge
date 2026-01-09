@@ -1,17 +1,18 @@
 import nodemailer from "nodemailer";
 
 const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: parseInt(process.env.SMTP_PORT || "587"),
-  secure: process.env.SMTP_PORT === "465",
+  host: process.env.SMTP_HOST || "smtp.webhuset.no",
+  port: 465, // Vi låser den til 465 siden Webhuset anbefaler dette med SSL
+  secure: true, // true for port 465
   auth: {
     user: process.env.SMTP_USER,
     pass: process.env.SMTP_PASS,
-  },tls: {
-      rejectUnauthorized: false,
-      minVersion: 'TLSv1.2'
-    },
-    connectionTimeout: 10000, // 10 sekunder maks
+  },
+  tls: {
+    // Dette sikrer at Render får koble til selv om SSL-sertifikatet er utstedt til en annen intern host
+    rejectUnauthorized: false 
+  },
+  connectionTimeout: 10000, // 10 sekunder
 
 });
 
