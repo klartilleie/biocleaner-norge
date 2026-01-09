@@ -45,3 +45,4 @@ mockupState = "FULLSTACK"
 
 [userenv.shared]
 BIOCLEANER_DB = "postgresql://biocleaner_db_user:FJV162S4OgfTG5WvhhqxWDxfxDo6al2z@dpg-d5gjaanpm1nc73e8bgl0-a.frankfurt-postgres.render.com/biocleaner_db?sslmode=require"
+SMTP_PORT = "587"
