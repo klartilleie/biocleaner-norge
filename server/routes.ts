@@ -20,7 +20,7 @@ export async function registerRoutes(
       
       // Try to send email (don't fail if email fails)
       try {
-        await sendContactEmail(parsed.data);
+         sendContactEmail(parsed.data);
       } catch (emailError) {
         console.error("Email sending failed, but message saved to database:", emailError);
       }
