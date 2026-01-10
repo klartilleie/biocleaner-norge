@@ -1,20 +1,6 @@
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 
-const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST || "smtp.webhuset.no",
-  port: 465, // Vi låser den til 465 siden Webhuset anbefaler dette med SSL
-  secure: true, // true for port 465
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS,
-  },
-  tls: {
-    // Dette sikrer at Render får koble til selv om SSL-sertifikatet er utstedt til en annen intern host
-    rejectUnauthorized: false 
-  },
-  connectionTimeout: 10000, // 10 sekunder
-
-});
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 interface ContactFormData {
   name: string;
@@ -25,8 +11,8 @@ interface ContactFormData {
 }
 
 export async function sendContactEmail(data: ContactFormData): Promise<void> {
-  const mailOptions = {
-    from: `"BioCleaner Nettside" <${process.env.SMTP_USER}>`,
+  await resend.emails.send({
+    from: "BioCleaner Nettside <onboarding@resend.dev>",
     to: "biocleaner-norge@klartilleie.no",
     replyTo: data.email,
     subject: `Ny henvendelse fra ${data.name}`,
@@ -51,7 +37,5 @@ ${data.municipality ? `Kommune: ${data.municipality}` : ""}
 Melding:
 ${data.message}
     `,
-  };
-
-  await transporter.sendMail(mailOptions);
+  });
 }
