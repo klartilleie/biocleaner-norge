@@ -12,7 +12,8 @@ interface ContactFormData {
 
 export async function sendContactEmail(data: ContactFormData): Promise<void> {
   await resend.emails.send({
-    from: "BioCleaner Nettside <onboarding@resend.dev>",
+    // Avsender må nå slutte på @klartilleie.no siden det er verifisert
+    from: "BioCleaner Nettside <biocleaner-norge@klartilleie.no>", 
     to: "biocleaner-norge@klartilleie.no",
     replyTo: data.email,
     subject: `Ny henvendelse fra ${data.name}`,
