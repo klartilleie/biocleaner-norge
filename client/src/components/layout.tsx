@@ -31,8 +31,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <div className="flex min-h-screen flex-col font-sans">
       <header
         className={cn(
-          "fixed top-0 z-50 w-full transition-all duration-300 bg-white shadow-sm",
-          isScrolled ? "py-2" : "py-3"
+          "fixed top-0 z-50 w-full transition-all duration-300",
+          isScrolled ? "py-2 bg-white/95 backdrop-blur-sm shadow-sm" : "py-3 bg-transparent"
         )}
       >
         <div className="container mx-auto px-4 flex items-center justify-between">
@@ -69,7 +69,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="md:hidden">
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon">
+                <Button 
+                  variant="ghost" 
+                  size="icon"
+                  className={cn(
+                    "rounded-full",
+                    !isScrolled && "bg-white/90 shadow-lg hover:bg-white"
+                  )}
+                >
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
