@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center pt-24 md:pt-56 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src={heroImage} 
