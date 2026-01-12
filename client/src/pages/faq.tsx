@@ -102,7 +102,10 @@ export default function Info() {
                  </p>
                  <p className="text-lg text-slate-700 leading-relaxed">Hvis du har mottatt varsel om pålegg, må du installere en godkjent renseløsning.
                  BioCleaner er SINTEF-godkjent og tilfredsstiller alle standardkrav (BOF5, Fosfor, etc.).</p>
-                 <p className="text-lg text-slate-700 leading-relaxed">Et renseanlegg for bolig med 5 PE (personer) starter fra ca. kr 115 000,- inkl. mva og innregulert.  Styreskap, søknad, graving og montering kommer i tillegg.</p>
+                 <h3 className="font-bold text-lg text-slate-900 mt-4">Pris og installasjon</h3>
+                 <p className="text-lg text-slate-700 leading-relaxed">Et renseanlegg for bolig (5 PE) starter fra kr 115 000,- inkl. mva. Prisen gjelder selve anlegget ferdig innregulert.</p>
+                 <p className="text-lg text-slate-700 leading-relaxed">Totalprisen vil variere basert på lokale forhold. Kostnader til styreskap, søknadsprosess, graving og montering kommer i tillegg.</p>
+                 <p className="text-lg text-slate-700 leading-relaxed"><strong>Vennligst merk:</strong> Minsteprisen forutsetter normale grunnforhold og enkel tilkomst. Ved krevende terreng, behov for sprenging eller omfattende gravearbeid, vil de faktiske kostnadene øke.</p>
                  <div className="pt-2">
                    <h3 className="font-bold text-slate-900 mb-2">Vi bistår med:</h3>
                    <ul className="grid sm:grid-cols-2 gap-2">
@@ -239,7 +242,7 @@ export default function Info() {
               Hva koster et renseanlegg?
             </AccordionTrigger>
             <AccordionContent className="text-slate-600 pb-4">
-              Prisen varierer avhengig av størrelse og modell. Et renseanlegg for bolig med 5 PE (personer) starter fra ca. kr 115 000,- inkl. mva og innregulert. Tilvalg som styreskap, søknad til kommunen, graving og montering kan leveres mot tillegg.
+              Et renseanlegg for bolig (5 PE) starter fra kr 115 000,- inkl. mva. Prisen gjelder selve anlegget ferdig innregulert. Totalprisen vil variere basert på lokale forhold. Kostnader til styreskap, søknadsprosess, graving og montering kommer i tillegg. Minsteprisen forutsetter normale grunnforhold og enkel tilkomst. Ved krevende terreng, behov for sprenging eller omfattende gravearbeid, vil de faktiske kostnadene øke.
             </AccordionContent>
           </AccordionItem>
 
