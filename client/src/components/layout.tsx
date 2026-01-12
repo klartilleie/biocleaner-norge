@@ -43,7 +43,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-8 bg-white/80 backdrop-blur-sm rounded-full px-6 py-2 shadow-sm">
             {navLinks.map((link) => (
               <Link key={link.href} href={link.href}>
                 <div
