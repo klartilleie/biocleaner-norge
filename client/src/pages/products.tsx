@@ -14,7 +14,7 @@ const bioboxImage = "https://www.biocleaner.no/uploads/1/2/8/5/128515706/rastepl
 export default function Products() {
   return (
     <Layout>
-      <div className="bg-slate-50 py-20">
+      <div className="bg-slate-50 pt-40 md:pt-60 pb-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold font-display text-slate-900 mb-6">
