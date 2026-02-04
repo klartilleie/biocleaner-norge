@@ -267,7 +267,7 @@ export default function Products() {
                <tbody className="divide-y divide-slate-100">
                  <tr className="hover:bg-slate-50 transition-colors">
                    <td className="p-3 font-medium text-primary">BC 6</td>
-                   <td className="p-3">1-6</td>
+                   <td className="p-3">5</td>
                    <td className="p-3">0,9 m³/dag</td>
                    <td className="p-3">3,0 m³</td>
                    <td className="p-3">1600 mm</td>
@@ -276,7 +276,7 @@ export default function Products() {
                  </tr>
                  <tr className="hover:bg-slate-50 transition-colors">
                    <td className="p-3 font-medium text-primary">BC 10</td>
-                   <td className="p-3">1-10</td>
+                   <td className="p-3">8</td>
                    <td className="p-3">1,5 m³/dag</td>
                    <td className="p-3">5,0 m³</td>
                    <td className="p-3">1700 mm</td>
@@ -285,7 +285,7 @@ export default function Products() {
                  </tr>
                  <tr className="hover:bg-slate-50 transition-colors">
                    <td className="p-3 font-medium text-primary">BC 12</td>
-                   <td className="p-3">1-12</td>
+                   <td className="p-3">10</td>
                    <td className="p-3">1,80 m³/dag</td>
                    <td className="p-3">6,0 m³</td>
                    <td className="p-3">1700 mm</td>
@@ -294,7 +294,7 @@ export default function Products() {
                  </tr>
                  <tr className="hover:bg-slate-50 transition-colors">
                    <td className="p-3 font-medium text-primary">BC 16</td>
-                   <td className="p-3">1-16</td>
+                   <td className="p-3">13</td>
                    <td className="p-3">2,40 m³/dag</td>
                    <td className="p-3">8,0 m³</td>
                    <td className="p-3">1930/1580 mm</td>
@@ -303,7 +303,7 @@ export default function Products() {
                  </tr>
                  <tr className="hover:bg-slate-50 transition-colors">
                    <td className="p-3 font-medium text-primary">BC 20</td>
-                   <td className="p-3">1-20</td>
+                   <td className="p-3">16</td>
                    <td className="p-3">3,0 m³/dag</td>
                    <td className="p-3">10,0 m³</td>
                    <td className="p-3">2000 mm</td>
@@ -312,7 +312,7 @@ export default function Products() {
                  </tr>
                  <tr className="hover:bg-slate-50 transition-colors">
                    <td className="p-3 font-medium text-primary">BC 25</td>
-                   <td className="p-3">1-25</td>
+                   <td className="p-3">25</td>
                    <td className="p-3">3,75 m³/dag</td>
                    <td className="p-3">12,5 m³</td>
                    <td className="p-3">2100 mm</td>
@@ -321,7 +321,7 @@ export default function Products() {
                  </tr>
                  <tr className="hover:bg-slate-50 transition-colors">
                    <td className="p-3 font-medium text-primary">BC 30</td>
-                   <td className="p-3">1-30</td>
+                   <td className="p-3">Valgfritt</td>
                    <td className="p-3">4,5 m³/dag</td>
                    <td className="p-3">15,0 m³</td>
                    <td className="p-3">2200 mm</td>
