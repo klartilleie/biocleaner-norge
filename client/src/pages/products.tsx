@@ -321,7 +321,7 @@ export default function Products() {
                  </tr>
                  <tr className="hover:bg-slate-50 transition-colors">
                    <td className="p-3 font-medium text-primary">BC 30</td>
-                   <td className="p-3">Valgfritt</td>
+                   <td className="p-3">25</td>
                    <td className="p-3">4,5 m³/dag</td>
                    <td className="p-3">15,0 m³</td>
                    <td className="p-3">2200 mm</td>
