@@ -165,7 +165,7 @@ export default function Info() {
               <ul className="space-y-2 text-sm text-slate-600">
                 <li>• Kontrollenhet COMFORT Plus</li>
                 <li>• Fjernstyring</li>
-                <li>• Tanktyper: BC 4 PP, BC 6-30 PP, BC 4 B, BC 20 B</li>
+                <li>• Tanktyper: BC 6-30 PP, BC 6 B, BC 20 B</li>
               </ul>
             </div>
             
