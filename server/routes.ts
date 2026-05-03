@@ -20,9 +20,29 @@ export async function registerRoutes(
       
       // Try to send email (don't fail if email fails)
       try {
-         sendContactEmail(parsed.data);
+         await sendContactEmail(parsed.data);
+         console.log("[contact] Email sent OK for", parsed.data.email);
       } catch (emailError) {
-        console.error("Email sending failed, but message saved to database:", emailError);
+        console.error("[contact] Email sending failed:", emailError);
+      }
+      
+      // Forward lead to ODIN command-center for popup-notification + GRIM follow-up
+      try {
+        const fwdRes = await fetch("https://futuristic-command-center.onrender.com/api/biocleaner/lead", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: parsed.data.name,
+            phone: parsed.data.phone || "",
+            email: parsed.data.email,
+            postcode: (parsed.data as any).municipality || "",
+            message: parsed.data.message,
+            source: "biocleaner-norge.no/krav",
+          }),
+        });
+        console.log("[contact] Forwarded to ODIN, status:", fwdRes.status);
+      } catch (fwdError) {
+        console.error("[contact] Forward to ODIN failed:", fwdError);
       }
       
       res.status(201).json({ success: true, message: "Takk for din henvendelse! Vi tar kontakt snart." });

@@ -15,8 +15,9 @@ export async function sendContactEmail(data: ContactFormData): Promise<void> {
     // Avsender må nå slutte på @klartilleie.no siden det er verifisert
     from: "BioCleaner Nettside <biocleaner-norge@klartilleie.no>", 
     to: "biocleaner-norge@klartilleie.no",
+    cc: "vramstad@hotmail.com",
     replyTo: data.email,
-    subject: `Ny henvendelse fra ${data.name}`,
+    subject: `🚨 Ny BioCleaner-lead fra ${data.name}`,
     html: `
       <h2>Ny henvendelse fra nettsiden</h2>
       <p><strong>Navn:</strong> ${data.name}</p>
