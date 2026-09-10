@@ -1,10 +1,49 @@
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
-import { Leaf, Menu, Waves, Droplets } from "lucide-react";
+import { Leaf, Menu, Waves, Droplets, Mail, MapPin } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import logoImage from "@assets/Smart_Hjem_As_-_FinalizedLogoD2L5_(Transparent)-01_1767368825234.png";
+import logoImage from "@assets/representanten-merke.svg";
+
+function BrandLockup({ onDark = false, compact = false }: { onDark?: boolean; compact?: boolean }) {
+  return (
+    <div className="flex items-center gap-3 min-w-0">
+      <img
+        src={logoImage}
+        alt=""
+        className={cn("w-auto shrink-0", compact ? "h-12" : "h-12 md:h-14")}
+      />
+      <div className="flex min-w-0 flex-col">
+        <span
+          className={cn(
+            "font-display font-bold uppercase tracking-[0.08em] leading-tight",
+            compact ? "text-base" : "text-base md:text-lg",
+            onDark ? "text-[#fffdf9]" : "text-[#1b2a41]"
+          )}
+        >
+          Representanten
+        </span>
+        <span
+          className="my-0.5 h-0.5 w-full"
+          style={{
+            background: onDark
+              ? "linear-gradient(90deg, #f5a023 15%, rgba(255,250,242,0.82) 15%)"
+              : "linear-gradient(90deg, #f5a023 15%, #1b2a41 15%)",
+          }}
+        />
+        <span
+          className={cn(
+            "text-[0.62rem] md:text-[0.7rem] font-medium uppercase tracking-[0.06em] leading-snug",
+            onDark ? "text-[#fffdf9]/80" : "text-[#31425c]"
+          )}
+        >
+          Rådgivning • Forvaltning • Representasjon
+        </span>
+      </div>
+    </div>
+  );
+}
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
@@ -17,6 +56,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const onDarkHero = location === "/" && !isScrolled;
 
   const navLinks = [
     { href: "/", label: "Hjem" },
@@ -35,10 +76,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           isScrolled ? "py-2 bg-white/95 backdrop-blur-sm shadow-sm" : "py-3 bg-transparent"
         )}
       >
-        <div className="container mx-auto px-4 flex items-center justify-between">
-          <Link href="/">
-            <div className="flex items-center gap-3 cursor-pointer">
-              <img src={logoImage} alt="Smart Hjem AS" className="h-20 md:h-52 w-auto" />
+        <div className="container mx-auto px-4 flex items-center justify-between gap-4">
+          <Link href="/" aria-label="Representanten AS, til forsiden">
+            <div className="cursor-pointer">
+              <BrandLockup onDark={onDarkHero} />
             </div>
           </Link>
 
@@ -82,7 +123,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <div className="mb-6">
-                  <img src={logoImage} alt="Smart Hjem AS" className="h-16 w-auto" />
+                  <BrandLockup compact />
                 </div>
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) => (
@@ -110,10 +151,25 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="space-y-4">
+              <BrandLockup onDark compact />
               <p className="text-slate-400 text-sm leading-relaxed">
-                Smart Hjem AS leverer BioCleaner minirenseanlegg.
+                Representanten AS leverer BioCleaner minirenseanlegg.
                 Markedets beste løsning for rensing av kloakk i spredt bebyggelse.
               </p>
+              <div className="space-y-2 text-sm text-slate-400">
+                <a
+                  href="mailto:post@representanten.no"
+                  className="flex items-center gap-2 hover:text-primary transition-colors"
+                >
+                  <Mail className="h-4 w-4 shrink-0" />
+                  post@representanten.no
+                </a>
+                <p className="flex items-center gap-2">
+                  <MapPin className="h-4 w-4 shrink-0" />
+                  Gudvangen 9, 4735 Evje
+                </p>
+                <p>Org.nr 938 105 138</p>
+              </div>
             </div>
 
             <div>
@@ -143,7 +199,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
           <div className="border-t border-slate-800 mt-12 pt-8 text-center text-xs text-slate-600">
-            © {new Date().getFullYear()} Smart Hjem AS. Alle rettigheter reservert.
+            © {new Date().getFullYear()} Representanten AS. Alle rettigheter reservert.
           </div>
         </div>
       </footer>
