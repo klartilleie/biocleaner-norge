@@ -122,7 +122,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-                <div className="mb-6">
+                <div className="mb-6 pr-10">
                   <BrandLockup compact />
                 </div>
                 <nav className="flex flex-col gap-4">
