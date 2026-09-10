@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 100">
+  <defs>
+    <linearGradient id="representanten-favicon-skjold" x1="20" y1="4" x2="72" y2="96" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#31465c"/>
+      <stop offset="1" stop-color="#1b2c3d"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#representanten-favicon-skjold)" d="M44 4.5 78 18.5v32.2c0 22.4-16.6 36.4-34 42.3C26.6 87.1 10 73.1 10 50.7V18.5L44 4.5z"/>
+  <path fill="none" stroke="#4b6480" stroke-width="2.2" d="M44 10.2 72.2 22v28c0 18.6-13.7 30.4-28.2 35.6C29.5 80.4 15.8 68.6 15.8 50V22L44 10.2z"/>
+  <rect x="28" y="30" width="10.5" height="42" rx="2.2" fill="#2b8cff"/>
+  <path fill="#f5a023" d="M38.2 30h16.4c8.6 0 13.2 9.6 8.3 16.8-2.2 3.2-5.8 4.7-10 4.7H38.2V30z"/>
+  <path stroke="#2b8cff" stroke-linecap="round" stroke-width="10" d="M46 52.2 64.5 74"/>
+  <circle cx="45.5" cy="51.6" r="5.4" fill="#7ec8ff"/>
+</svg>

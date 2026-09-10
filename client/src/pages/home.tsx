@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center pt-24 md:pt-56 overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center pt-24 md:pt-32 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src={heroImage} 
@@ -39,7 +39,7 @@ export default function Home() {
               Effektiv rensing av <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">kloakk</span> for hus og hytte
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed max-w-lg">
-              BioCleaner fra Smart Hjem AS møter alle kommunale krav til rensing. En driftssikker og luktfri løsning for fremtiden.
+              BioCleaner fra Representanten AS møter alle kommunale krav til rensing. En driftssikker og luktfri løsning for fremtiden.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link href="/produkter">
@@ -123,7 +123,7 @@ export default function Home() {
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold font-display mb-4 text-slate-900">Løsninger for alle behov</h2>
                 <p className="text-slate-500 text-lg">
-                  Enten du har fått pålegg fra kommunen om utbedring av kloakk, eller bygger nytt, har Smart Hjem AS løsningen.
+                  Enten du har fått pålegg fra kommunen om utbedring av kloakk, eller bygger nytt, har Representanten AS løsningen.
                 </p>
               </div>
               
@@ -185,7 +185,7 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl md:text-5xl font-bold font-display mb-6">Mottatt varsel fra kommunen?</h2>
           <p className="text-primary-foreground/90 text-xl max-w-2xl mx-auto mb-10">
-            Ikke fortvil. Vi i Smart Hjem AS hjelper deg med hele prosessen fra søknad til ferdig installert BioCleaner anlegg.
+            Ikke fortvil. Vi i Representanten AS hjelper deg med hele prosessen fra søknad til ferdig installert BioCleaner anlegg.
           </p>
           <Link href="/info">
             <Button size="lg" variant="secondary" className="rounded-full px-10 h-14 text-lg text-primary font-bold shadow-xl">
